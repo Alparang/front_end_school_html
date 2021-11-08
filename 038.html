@@ -4,26 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>가변크기단위</title>
+    <title>가변 크기 단위</title>
+    <style>
+        html, body {
+            font-size: 20px;
+        }
+
+        p {
+          font-size: 2em;
+          font-weight: 700;
+        }
+
+        div {
+            font-size: 2em;
+        }
+
+        .one {
+            font-size: 2rem;
+        }
+    </style>
 </head>
-<style>
-    body {
-        font-size: 10px;
-    }
-    p {
-        font-size: 2em;
-        font-weight: 900;
-    }
-    div {
-        font-size : 2em;
-    }
-</style>
 <body>
     <h1>hello world</h1>
     <p>hello world</p>
+    <!-- em, %, rem, vw, vh -->
     <div>
-        <div>hello world</div>
+        <!-- 10px * 2 = 20px -->
+        <div>
+            <!-- 20px * 2 = 40px -->
+            <div>
+                <!-- 40px * 2 = 80px -->
+                hello world
+            </div>
+        </div>
     </div>
-</body>
 
+    <div>
+        <!-- 10px * 2 = 20px -->
+        <div>
+            <!-- 20px * 2 = 40px -->
+            <div class="one">
+                <!-- 40px * 2 = 80px -->
+                hello world
+            </div>
+        </div>
+    </div>
+    <!-- rem : root기준 배율입니다. html의 최상위 태그가 <html>이기때문에 html을 기준으로 하는거구요^^
+        em : 부모에게 상속받은 글자사이즈 기준 배율입니다. ^^ 꼭 <body>를 지칭하는건 아니구요, 부모요소에게 상속받은 값 기준이예요
+         -->
+</body>
 </html>
