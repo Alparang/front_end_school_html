@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글자 슬라이드</title>
+    <style>
+        /* animation */
+        @keyframes 움직여 {
+            0% {
+                transform: translate(0px, 0px);
+            }
+            50% {
+                transform: translate(100px, 0px);
+            }
+            100% {
+                transform: translate(100px, 100px);
+            }
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background: blue;
+            animation: 움직여 2s;
+        }
+    </style>
+</head>
+<body>
+    <div>hello</div>
+</body>
+</html>
